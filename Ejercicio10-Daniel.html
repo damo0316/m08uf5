@@ -2,71 +2,46 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ejemplo de tabla Daniel</title>
+  <title>Ejemplo de combinación de columnas en una tabla</title>
+  <style>
+    /* Estilos para la tabla (opcional, con fines visuales) */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Comparativa de reproductores MP3</h1>
+<h1>Ejemplo de combinación de columnas en una tabla</h1>
 
-<table border="1">
-  <caption>Tabla comparativa de las caracteristicas tecnicas de los reproductores MP3</caption>
+<table>
+  <caption>Título de la tabla</caption>
   <tr>
-    <th></th>
-    <th><img src="imatges/mp3_pequeno_blanco.png" >
-		<img src="imatges/mp3_pequeno_negro.png" >
-		<h3>MP3 mini</h3>
-	</th>
-	<th><img src="imatges/mp3_grande_blanco.png" >
-		<img src="imatges/mp3_grande_negro.png" >
-		<h4>MP3 grande</h4>
-	</th>
+    <th>Columna 1</th>
+    <th>Columna 2</th>
+    <th>Columna 3</th>
   </tr>
   <tr>
-    <th>
-      <h3>Capacidad de </h3><h3>almacenamiento</h3>
-    </th>
-    <td>
-	<table border="1">
-        <tr>
-          <td>4GB (1.000 canciones)</td><td>8GB (2.000 canciones)</td><td>16GB (4.000 canciones)</td>
-        </tr>
-    </table>
-    </td>
-	<td> </td>
+    <td>Fila 1 - Columna 1</td>
+    <td colspan="2">Fila 1 - Columna 2 y 3 combinadas</td>
   </tr>
   <tr>
-    <td>
-      <h3>Colores</h3>
-    </td>
-    <td>
-	
-    </td>
-	<td>
-	
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>Pantalla</h3>
-    </td>
-    <td>
-	  <p>LCD de 3 cm (diagonal) con retroiluminacion</p>  
-    </td>
-	<td>
-	  <p>LCD de 6cm (diagonal) con retroiluminacion</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>Tiempo de carga</h3>
-    </td>
-    <td>
-   <p> Unas 3 horas</p>
-    </td>
-	<td>
-	  <p>Unas 2 horas para alcanzar el 80% de la capacidad</p>
-    </td>
+    <td>Fila 2 - Columna 1</td>
+    <td>Fila 2 - Columna 2</td>
+    <td>Fila 2 - Columna 3</td>
   </tr>
 </table>
+
 </body>
 </html>
