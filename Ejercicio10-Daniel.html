@@ -1,47 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Ejemplo de combinación de columnas en una tabla</title>
-  <style>
-    /* Estilos para la tabla (opcional, con fines visuales) */
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Ejercicio9-Daniel</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-<h1>Ejemplo de combinación de columnas en una tabla</h1>
-
-<table>
-  <caption>Título de la tabla</caption>
-  <tr>
-    <th>Columna 1</th>
-    <th>Columna 2</th>
-    <th>Columna 3</th>
-  </tr>
-  <tr>
-    <td>Fila 1 - Columna 1</td>
-    <td colspan="2">Fila 1 - Columna 2 y 3 combinadas</td>
-  </tr>
-  <tr>
-    <td>Fila 2 - Columna 1</td>
-    <td>Fila 2 - Columna 2</td>
-    <td>Fila 2 - Columna 3</td>
-  </tr>
-</table>
-
+    <h1><b>Resultado de la búsqueda</b></h1>
+    <table>
+        <caption>Tabla comparativa de las características técnicas de los reproductores MP3</caption>
+        <tr>
+            <th></th>
+            <th colspan="3">
+                <img src="imatges/mp3_pequeno_blanco.png" alt="mp3pequeñoblanco">  
+                <img src="imatges/mp3_pequeno_negro.png" alt="mp3pequeñonegro">
+                <p>MP3 mini</p>
+            </th>
+            <th colspan="2">
+                <img src="imatges/mp3_grande_blanco.png" alt="mp3grandeblanco">
+                <img src="imatges/mp3_grande_negro.png" alt="mp3grandenegro">
+                <p>MP3 grande</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p>Capacidad de almacenamiento</p>
+            </th>
+            <td>
+                <p>4GB<br>(1.000 canciones)</p>
+            </td>
+            <td>
+                <p>8B<br>(2.000 canciones)</p>
+            </td>
+            <td>
+                <p>16GB<br>(4.000 canciones)</p>
+            </td>
+            <td>
+                <p>30GB<br>(7.500 canciones)</p>
+            </td>
+            <td>
+                <p>80GB<br>(20.000 canciones)</p>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <p>Colores</p>
+            </th>
+            <td>
+                <img src="imatges/color_blanco.png" alt="blanco">
+            </td>
+            <td>
+                <img src="imatges/color_negro.png" alt="negro">
+                <img src="imatges/color_verde.png" alt="verde">
+                <img src="imatges/color_azul.png" alt="azul">
+                <img src="imatges/color_rosa.png" alt="rosa">
+            </td>
+            <td>
+                <img src="imatges/color_negro.png" alt="negro">
+            </td>
+            <td colspan="2">
+                <img src="imatges/color_blanco.png" alt="blanco">
+                <img src="imatges/color_negro.png" alt="negro">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <p>Pantalla</p>
+            </th>
+            <td colspan="3">
+                <p>LCD de 3cm (diagonal) con retroiluminación</p>
+            </td>
+            <td colspan="2">
+                <p>LCD de 6cm (diagonal) con retroiluminación</p>
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="2">
+                <p>Tiempo de carga</p>
+            </th>
+            <td rowspan="2" colspan="3">
+                <p>Unas 3 horas</p>
+            </td>
+            <td colspan="2">
+                <p> Unas 4 horas</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p> Unas 2 horas para alcanzar el 80% de la capacidad</p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
