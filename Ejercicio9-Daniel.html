@@ -1,59 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Ejemplo de tabla Daniel</title>
+    <meta charset="UTF-8">
+    <title>Ejercicio9-Daniel</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-
-<h1>Resultado de la búsqueda</h1>
-
-<table border="1">
-  <caption>Resultado de la búsqueda</caption>
-  <tr>
-    <th>Imagen</th>
-    <th>Datos</th>
-  </tr>
-  <tr>
-    <td>
-      <img src="imatges/portatil.png" >
-    </td>
-    <td>
-      <a href="https://www.pccomponentes.com/lenovo-ideapad-slim-3-15iah8-intel-core-i5-12450h-16gb-512gb-ssd-156">Portatil Lenovo IdeaPad</a><br>
-      <a href="https://www.pccomponentes.com/lenovo-ideapad-slim-3-15iah8-intel-core-i5-12450h-16gb-512gb-ssd-156"> Comprar: </a><br> 
-	  <p>Precio: 449,00€ <del>549,00€</del></p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="imatges/videocamara.png" >
-    </td>
-    <td>
-      <a href="https://www.pccomponentes.com/sjcam-sj6-legend-videocamara-deportiva-wifi-negra">Sjcam SJ6 Legend Videocámara Deportiva </a><br>
-      <a href="https://www.pccomponentes.com/sjcam-sj6-legend-videocamara-deportiva-wifi-negra">Comprar: </a><br>
-      <p>Precio: 85,99€ <del>91,98€ </del></p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="imatges/tv.png" >
-    </td>
-    <td>
-      <a href="https://www.pccomponentes.com/xiaomi-tv-a2-43-led-ultrahd-4k-hdr10">Xiaomi TV A2 43" LED UltraHD 4K </a><br>
-      <a href="https://www.pccomponentes.com/xiaomi-tv-a2-43-led-ultrahd-4k-hdr10">Comprar: </a><br>
-      <p>Precio: 259,00€ <del> 299,99€ </del></p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="imatges/movil.png" >
-    </td>
-    <td>
-      <a href="https://www.pccomponentes.com/apple-iphone-13-256gb-verde-alpino-libre">Apple iPhone 13 256GB </a><br>
-      <a href="https://www.pccomponentes.com/apple-iphone-13-256gb-verde-alpino-libre">Comprar: </a><br>
-      <p>Precio: 799,00€ <del> 859,00€ </del></p>
-    </td>
-  </tr>
-</table>
-</body>
+  <body>
+    <h1><b>Resultado de la búsqueda</b></h1>
+    <table>
+       <caption>Tabla comparativa de las características tecnicas de los reproductores MP3</caption>
+         <tr>
+           <th></th>
+             <th colspan="3">
+               <img src="imatges/mp3_pequeno_blanco.png" alt="mp3pequeñoblanco">  
+               <img src="imatges/mp3_pequeno_negro.png" alt="mp3pequeñonegro">
+             </th>
+           <th colspan="2">
+               <img src="imatges/mp3_grande_blanco.png" alt="mp3grandeblanco">
+               <img src="imatges/mp3_grande_negro.png" alt="mp3grandenegro">
+           </th>
+         </tr>
+         <tr>
+            <th>
+              <p>Capacidad de almacenamiento</p>
+            </th>
+            <td>
+              <p>4GB<br>(1.000 canciones)</p>
+            </td>
+            <td>
+              <p>8B<br>(2.000 canciones)</p>
+            </td>
+            <td>
+              <p>16GB<br>(4.000 canciones)</p>
+            </td>
+            <td>
+              <p>30GB<br>(7.500 canciones)</p>
+            </td>
+            <td>
+              <p>80GB<br>(20.000 canciones)</p>
+            </td>
+         </tr>
+         <tr>
+            <th>
+              <p>Colores</p>
+            </th>
+            <td>
+              <img src="imatges/color_blanco.png" alt="blanco">
+            </td>
+            <td>
+              <img src="imatges/color_negro.png" alt="negro">
+              <img src="imatges/color_verde.png" alt="verde">
+              <img src="imatges/color_azul.png" alt="azul">
+              <img src="imatges/color_rosa.png" alt="rosa">
+            </td>
+            <td>
+              <img src="imatges/color_negro.png" alt="negro">
+            </td>
+            <td colspan="2">
+              <img src="imatges/color_blanco.png" alt="blanco">
+              <img src="imatges/color_negro.png" alt="negro">
+            </td>
+         </tr>
+         <tr>
+           <th>
+             <p>Pantalla</p>
+           </th>
+             <td colspan="3">
+               <p>LCD de 3cm (diagonal) con retroiluminación</p>
+             </td>
+             <td colspan="2">
+               <p>LCD de 6cm (diagonal) con retroiluminación</p>
+             </td>
+         </tr>
+         <tr>
+           <th rowspan="2">
+             <p>Tiempo de carga</p>
+           </th>
+             <td rowspan="2" colspan="3">
+               <p>Unas 3 horas</p>
+             </td>
+            <td colspan="2">
+               <p> Unas 4 horas</p>
+            </td>
+         </tr>
+         <tr>
+           <td colspan="2">
+             <p> Unas 2 horas para alcanzar el 80% de la capacidad</p>
+           </td>
+         </tr>
+    </table>
+  </body>
 </html>
