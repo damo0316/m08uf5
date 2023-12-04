@@ -25,21 +25,3 @@ table, th, td {
 .small {
   font-size: smaller;
 }
-.small::before {
-  position: absolute;
-  top: 50%;
-  left: -10px;
-  width: 8px;
-  height: 8px;
-  background-color: #000;
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
-.small::after {
-  content: 'or24';
-  position: absolute;
-  top: 50%;
-  right: -30px; 
-  transform: translateY(-50%);
-  text-decoration: underline;
-}
