@@ -2,82 +2,87 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Formulario de Curriculum</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Formulario de Currículum</title>
 </head>
 <body>
+  <h1>Currículum</h1>
   <div class="container">
-    <h1 style="text-align:center;">Currículum </h1>
-    <div class="form-group">
-      <label for="nombre">Información Básica:</label>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" placeholder="Nombre">
-    </div>
-    
-    <div class="form-group">
-      <label for="altura">Altura en centimetros:</label>
-      <input type="number" id="altura" placeholder="Altura en cm">
-    </div>
-
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Correo electrónico">
-    </div>
-
-    <div class="form-group">
-      <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-      <input type="date" id="fecha_nacimiento">
-    </div>
-
-    <div class="form-group">
-      <label>Nacionalidad:</label>
-      <div class="radio-group">
-        <label class="radio-label">
-          <input type="radio" name="nacionalidad" value="Española">
-          Española
-        </label>
-        <label class="radio-label">
-          <input type="radio" name="nacionalidad" value="Comunitario(UE)">
-          Comunitario
-        </label>
-        <label class="radio-label">
-          <input type="radio" name="nacionalidad" value="No comunitario">
-          No comunitario
-        </label>
+    <div class="info-basica">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Nombre">
+      </div>
+      <div class="form-group">
+        <label for="altura">Altura en centímetros:</label>
+        <input type="text" id="altura" placeholder="Altura en cm">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Correo electrónico">
+      </div>
+      <div class="form-group">
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento">
       </div>
     </div>
 
-    <div class="form-group">
-      <label for="estudios">Estudios:</label>
-      <select id="estudios">
-        <option value="estudios1">Batchillerato</option>
-        <option value="estudios2">Grado medio</option>
-        <option value="estudios3">Grado superior</option>
-        <option value="estudios3">Universidad</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>Idiomas:</label>
-      <div class="checkbox-group">
-        <label class="checkbox-inline">
-          <input type="checkbox" id="Catalán" name="Catalán" value="Catalán">
-          Catalán
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="Castellano" name="Castellano" value="Castellano">
-          Castellano
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="Inglés" name="Inglés" value="Inglés">
-          Inglés
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="Chino" name="Chino" value="Chino">
-          Chino
-        </label>
+    <div class="nacionalidad">
+      <div class="form-group">
+        <label>Nacionalidad:</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="nacionalidad" value="nacionalidad1">
+            Nacionalidad 1
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="nacionalidad" value="nacionalidad2">
+            Nacionalidad 2
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="nacionalidad" value="nacionalidad3">
+            Nacionalidad 3
+          </label>
+        </div>
       </div>
     </div>
+
+    <div class="select-estudios">
+      <div class="form-group">
+        <label for="estudios">Estudios:</label>
+        <select id="estudios">
+          <option value="estudios1">Estudios 1</option>
+          <option value="estudios2">Estudios 2</option>
+          <option value="estudios3">Estudios 3</option>
+          <!-- Agrega más opciones si es necesario -->
+        </select>
+      </div>
+    </div>
+
+    <div class="checkbox-group">
+      <div class="form-group">
+        <label>Idiomas (selecciona varios):</label>
+        <div class="checkbox-group">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="idioma1" name="idioma1" value="idioma1">
+            Idioma 1
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="idioma2" name="idioma2" value="idioma2">
+            Idioma 2
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="idioma3" name="idioma3" value="idioma3">
+            Idioma 3
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="idioma4" name="idioma4" value="idioma4">
+            Idioma 4
+          </label>
+          <!-- Agrega más idiomas si es necesario -->
+        </div>
+      </div>
+    </div>
+
     <div class="btn-group">
       <button class="btn" type="submit">Enviar</button>
       <button class="btn" type="reset">Cancelar</button>
