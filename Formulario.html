@@ -16,7 +16,7 @@
       </div>
       <div class="form-group">
         <label for="altura">Altura en centímetros:</label>
-        <input type="text" id="altura" placeholder="Altura en cm">
+        <input type="number" id="altura" placeholder="Altura en cm">
       </div>
       <div class="form-group">
         <label for="email">Email:</label>
@@ -33,16 +33,16 @@
         <label>Nacionalidad:</label>
         <div class="radio-group">
           <label class="radio-label">
-            <input type="radio" name="nacionalidad" value="nacionalidad1">
-            Nacionalidad 1
+            <input type="radio" name="nacionalidad" value="Española">
+            Española
           </label>
           <label class="radio-label">
-            <input type="radio" name="nacionalidad" value="nacionalidad2">
-            Nacionalidad 2
+            <input type="radio" name="nacionalidad" value="Comunitario(UE)">
+            Comunitario(UE)
           </label>
           <label class="radio-label">
-            <input type="radio" name="nacionalidad" value="nacionalidad3">
-            Nacionalidad 3
+            <input type="radio" name="nacionalidad" value="No comunitario">
+            No comunitario
           </label>
         </div>
       </div>
@@ -52,35 +52,34 @@
       <div class="form-group">
         <label for="estudios">Estudios:</label>
         <select id="estudios">
-          <option value="estudios1">Estudios 1</option>
-          <option value="estudios2">Estudios 2</option>
-          <option value="estudios3">Estudios 3</option>
-          <!-- Agrega más opciones si es necesario -->
+          <option value="Batchillerato">Batchillerato</option>
+          <option value="Grado Medio">Grado Medio</option>
+          <option value="Grado Superior">Grado Superior</option>
+          <option value="Universidad">Universidad</option>
         </select>
       </div>
     </div>
 
     <div class="checkbox-group">
       <div class="form-group">
-        <label>Idiomas (selecciona varios):</label>
+        <label>Idiomas:</label>
         <div class="checkbox-group">
           <label class="checkbox-inline">
-            <input type="checkbox" id="idioma1" name="idioma1" value="idioma1">
-            Idioma 1
+            <input type="checkbox" id="idioma1" name="idiomas[]" value="Catalán">
+            Catalán
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" id="idioma2" name="idioma2" value="idioma2">
-            Idioma 2
+            <input type="checkbox" id="idioma2" name="idiomas[]" value=Castellano">
+            Castellano
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" id="idioma3" name="idioma3" value="idioma3">
-            Idioma 3
+            <input type="checkbox" id="idioma3" name="idiomas[]" value="Inglés">
+            Inglés
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" id="idioma4" name="idioma4" value="idioma4">
-            Idioma 4
+            <input type="checkbox" id="idioma4" name="idiomas[]" value="Chino">
+            Chino
           </label>
-          <!-- Agrega más idiomas si es necesario -->
         </div>
       </div>
     </div>
