@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Currículum</title>
+  <style>
+    .container {
+      width: 50%;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: calc(100% - 10px);
+      padding: 5px;
+      margin-top: 5px;
+    }
+    .btn-group {
+      text-align: right;
+      margin-top: 20px;
+    }
+    .btn {
+      padding: 8px 20px;
+      margin-left: 10px;
+    }
+    .radio-group {
+      display: flex;
+      align-items: center;
+    }
+    .radio-label {
+      margin-right: 10px;
+    }
+    .checkbox-inline {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Currículum</h2>
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Nombre">
+    </div>
+
+    <div class="form-group">
+      <label for="altura">Altura en centímetros:</label>
+      <input type="text" id="altura" placeholder="Altura en cm">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Correo electrónico">
+    </div>
+
+    <div class="form-group">
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha_nacimiento">
+    </div>
+
+    <div class="form-group">
+      <label>Nacionalidad:</label>
+      <div class="radio-group">
+        <label class="radio-label">
+          <input type="radio" name="nacionalidad" value="nacionalidad1">
+          Nacionalidad 1
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="nacionalidad" value="nacionalidad2">
+          Nacionalidad 2
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="nacionalidad" value="nacionalidad3">
+          Nacionalidad 3
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="estudios">Estudios:</label>
+      <select id="estudios">
+        <option value="estudios1">Estudios 1</option>
+        <option value="estudios2">Estudios 2</option>
+        <option value="estudios3">Estudios 3</option>
+        <!-- Agrega más opciones si es necesario -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Idiomas:</label>
+      <div class="checkbox-group">
+        <label class="checkbox-inline">
+          <input type="checkbox" id="idioma1" name="idioma1" value="idioma1">
+          Idioma 1
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="idioma2" name="idioma2" value="idioma2">
+          Idioma 2
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="idioma3" name="idioma3" value="idioma3">
+          Idioma 3
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="idioma4" name="idioma4" value="idioma4">
+          Idioma 4
+        </label>
+        <!-- Agrega más idiomas si es necesario -->
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn" type="submit">Enviar</button>
+      <button class="btn" type="reset">Cancelar</button>
+    </div>
+  </div>
+</body>
+</html>
