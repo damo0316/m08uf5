@@ -32,7 +32,33 @@ table, th, td {
       border: 1px solid #ccc;
       border-radius: 8px;
     }
-    .form-group {
+    .info-basica {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .info-basica,
+    .form-group:nth-child(2)~.form-group:nth-child(4) {
+      background-color: #FFDAB9; /* Color de fondo para Información Básica */
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .nacionalidad {
+      background-color: #98FB98; /* Color de fondo para Nacionalidad */
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .select-estudios {
+      background-color: #E6E6FA; /* Color de fondo para Estudios */
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .checkbox-group {
+      background-color: #FFB6C1; /* Color de fondo para Idiomas */
+      padding: 10px;
+      border-radius: 8px;
       margin-bottom: 15px;
     }
     label {
@@ -58,14 +84,10 @@ table, th, td {
     .radio-group {
       display: flex;
       align-items: center;
-    }
-    .radio-label {
-      margin-right: 10px;
+      padding: 5px;
+      border-radius: 5px;
     }
     .checkbox-inline {
       display: inline-block;
       margin-right: 20px;
     }
-fieldset:nth-of-type(1) {
-	background-color: blue;
-}
