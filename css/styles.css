@@ -38,19 +38,19 @@ table, th, td {
     }
     .info-basica,
     .form-group:nth-child(2)~.form-group:nth-child(4) {
-      background-color: green; /* Color de fondo para Información Básica */
+      background-color: #FFDAB9; /* Color de fondo para Información Básica */
       padding: 10px;
       border-radius: 8px;
       margin-bottom: 15px;
     }
     .nacionalidad {
-      background-color: orange; /* Color de fondo para Nacionalidad */
+      background-color: #98FB98; /* Color de fondo para Nacionalidad */
       padding: 10px;
       border-radius: 8px;
       margin-bottom: 15px;
     }
     .select-estudios {
-      background-color: pink; /* Color de fondo para Estudios */
+      background-color: #E6E6FA; /* Color de fondo para Estudios */
       padding: 10px;
       border-radius: 8px;
       margin-bottom: 15px;
